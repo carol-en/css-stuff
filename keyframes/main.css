@@ -1,0 +1,47 @@
+/* div {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    animation: myFrames 2s ease-in-out 0s infinite;
+} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow:  row nowrap;
+    background: #2e9b9b;
+    text-align: center;
+    animation: rollIn 2s linear 0s 1;
+}
+
+a {
+    display: block;
+    padding: 1em .5em;
+    background: #2e9b9b;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+a:hover {
+    background: #fff;
+    color: #2e9b9b;
+}
+
+@keyframes rollIn {
+
+    0% { width: 0; }
+    /* 25% {width: 25%;}
+    50% { width: 50%;} */
+    /* 75% { width: 50%;} */
+    100% { width: 100%;}
+}

@@ -1,0 +1,108 @@
+
+body {
+    background:white;
+}
+
+.wrap {
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
+    position: relative;
+    margin: 25% auto;
+}
+
+h1 {
+    position: abolute;
+    margin: 45% 45%;
+    z-index: 1;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue;
+}
+
+.squares {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.squares:hover .red{
+    animation: rotate-red 2s ease-in-out;
+}
+
+.squares:hover .yellow{
+    animation: rotate-yellow 2s ease-in-out;
+    }
+
+.squares:hover .green{
+    animation: rotate-green 2s ease-in-out;
+}
+
+.squares:hover .blue{
+    animation: rotate-blue 2s ease-in-out;
+}
+
+@keyframes rotate-red {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: none;
+    }
+    50% {
+        transform: rotate(180deg);
+        transform-origin: top left;
+    }
+}
+
+@keyframes rotate-yellow {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: none;
+    }
+    50% {
+        transform-origin: top right;
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes rotate-green {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: none;
+    }
+    50% {
+        transform: rotate(-180deg);
+        transform-origin: bottom left;
+    }
+}
+
+
+@keyframes rotate-blue {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: none;
+    }
+    50% {
+        transform-origin: bottom right;
+        transform: rotate(180deg);
+    }
+}
